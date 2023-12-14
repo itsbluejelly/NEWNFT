@@ -125,8 +125,8 @@ export default function LaunchesPage(){
     )
 
     return(
-        <div className="min-h-[100vh] scroll-smooth box-border transition-all duration-500 ease-in-out">
-            <div className="keen-slider md:min-h-[80vh] md:mb-[20%] lg:mb-0 lg:h-[100%]" ref={sliderRef}>
+        <div className="min-h-screen scroll-smooth box-border transition-all duration-500 ease-in-out">
+            <div className="keen-slider md:min-h-[80vh] md:mb-5 lg:mb-0 lg:h-[100%]" ref={sliderRef}>
                 {generatedEntriesArray}
             </div>
 

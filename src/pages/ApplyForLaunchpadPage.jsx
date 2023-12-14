@@ -4,9 +4,11 @@ import { UserButton, SignedIn, SignedOut, RedirectToSignIn} from "@clerk/clerk-r
 
 // EXPORTING DEFAULT APPLYFORLAUNCHPADPAGE
 export default function ApplyForLaunchpadPage(){
+    // const {userId} = useAuth()
+
     return(
         // A CONTAINER FOR THE WHOLE PAGE
-        <div className="min-h-[100vh] scroll-smooth box-border transition-all duration-500 ease-in-out flex justify-center items-center">
+        <div className="min-h-screen scroll-smooth box-border transition-all duration-500 ease-in-out flex justify-center items-center">
             <SignedIn>
                 <UserButton
                     showName={true}

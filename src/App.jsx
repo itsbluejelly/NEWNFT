@@ -15,7 +15,7 @@ import AllCollectionsPage from './pages/AllCollectionsPage';
 import AllNftsPage from './pages/AllNftsPage';
 import RewardsPage from './pages/RewardsPage'
 import HomePage from './pages/Home/HomePage';
-import LaunchpadPage from './pages/launchpadPage';
+import LaunchpadPage from './pages/LaunchpadPage';
 import LaunchesPage from './pages/LaunchesPage';
 import ApplyForLaunchpadPage from "./pages/ApplyForLaunchpadPage"
 import SignInAuthenticationPage from './pages/SignInAuthenticationPage';
@@ -29,7 +29,7 @@ import ImpactPage from './pages/ImpactPage';
 import Faq from './pages/Faq';
 import TnC from './pages/T&C';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
-import Profile from './pages/profile';
+import Profile from './pages/Profile';
 
 import RootLayout from './layouts/RootLayout'
 import {ThemeContext} from "./contexts/ThemeProvider";
@@ -54,7 +54,7 @@ createWeb3Modal({ wagmiConfig, projectId, chains })
 // CREATING A APPROUTER FUNCTION
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route path='/'>
       {/* AUTH */}
       <Route path='auth'>
         <Route path="sign-in" element={<SignInAuthenticationPage/>}>
@@ -68,40 +68,42 @@ const appRouter = createBrowserRouter(
         </Route>
       </Route>
 
-      {/* HOMEPAGE */}
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="home" element={<HomePage />}></Route>
-      <Route path="/profile" element={<Profile />}></Route>
+      <Route path="/" element={<RootLayout />}>
+        {/* HOMEPAGE */}
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="home" element={<HomePage />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
 
-      {/* REWARDS */}
-      <Route path="rewards" element={<RewardsPage />}></Route>
+        {/* REWARDS */}
+        <Route path="rewards" element={<RewardsPage />}></Route>
 
-      {/* EXPLORE */}
-      <Route path="explore">
-        <Route path="allCollections" element={<AllCollectionsPage />}></Route>
-        <Route path="allNFTs" element={<AllNftsPage />}></Route>
-      </Route>
+        {/* EXPLORE */}
+        <Route path="explore">
+          <Route path="allCollections" element={<AllCollectionsPage />}></Route>
+          <Route path="allNFTs" element={<AllNftsPage />}></Route>
+        </Route>
 
-      {/* ABOUT */}
-      <Route path="about">
-        <Route path="team" element={<TeamPage />}></Route>
-        <Route path="impact" element={<ImpactPage />}></Route>
-        <Route path="FAQ" element={<Faq />}></Route>
-        <Route path="T&C" element={<TnC />}></Route>
-        <Route path="privacy-policy" element={<PrivacyPolicyPage />}></Route>
-      </Route>
+        {/* ABOUT */}
+        <Route path="about">
+          <Route path="team" element={<TeamPage />}></Route>
+          <Route path="impact" element={<ImpactPage />}></Route>
+          <Route path="FAQ" element={<Faq />}></Route>
+          <Route path="T&C" element={<TnC />}></Route>
+          <Route path="privacy-policy" element={<PrivacyPolicyPage />}></Route>
+        </Route>
 
-      {/* CREATORS */}
-      <Route path="creators">
-        <Route path="verification" element={<VerificationPage />}></Route>
-        <Route path="mining" element={<MiningPage />}></Route>
-      </Route>
+        {/* CREATORS */}
+        <Route path="creators">
+          <Route path="verification" element={<VerificationPage />}></Route>
+          <Route path="mining" element={<MiningPage />}></Route>
+        </Route>
 
-      {/* LAUNCHPAD */}
-      <Route path='launchpad'>
-        <Route path='launches' element={<LaunchesPage/>}></Route>
-        <Route path='launch details' element={<LaunchpadPage/>}></Route>
-        <Route path='apply for launchpad' element={<ApplyForLaunchpadPage/>}></Route>
+        {/* LAUNCHPAD */}
+        <Route path='launchpad'>
+          <Route path='launches' element={<LaunchesPage/>}></Route>
+          <Route path='launch details' element={<LaunchpadPage/>}></Route>
+          <Route path='apply for launchpad' element={<ApplyForLaunchpadPage/>}></Route>
+        </Route>
       </Route>
     </Route>
   )
