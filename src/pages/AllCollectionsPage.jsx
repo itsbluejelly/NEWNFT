@@ -82,7 +82,7 @@ export default function AllCollectionsPage(){
         </div>
       
         <div>
-          <div className="cards gap-3 py-10 px-5 grid sm:grid-cols-3 lg-grid-cols-5 lg:px-20">
+          <div className="cards gap-3 py-10 px-5 grid sm:grid-cols-3 lg:grid-cols-5 lg:px-20">
             {collectionCardsArrayGenerator()}
           </div>
         </div>

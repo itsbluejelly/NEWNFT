@@ -5,8 +5,7 @@ import WhaleActivityContainer from "../../components/HomePage/WhaleActivityConta
 import Table from "../../components/HomePage/Table";
 import { Icon } from "@iconify/react";
 import AllCollectionsPageCard from "../../components/AllCollectionsPage/AllCollectionsPageCard";
-  // IMPORTING CSS FILE
-import "./Home.css";
+  
   // IMPORTING DATABASES
 import allCollectionsCardData from "../../database/allCollectionsCardData";
 
@@ -36,7 +35,7 @@ export default function HomePage() {
 
             <div className="flex flex-row flex-nowrap gap-2 items-center whitespace-nowrap text-2xl mr-auto w-full justify-self-start text-left ">Top collections
               <div className="flex flex-row flex-nowrap gap-1">
-                <span className="h3 text-2xl font-bold flex flex-row flex-nowrap items-center">Generative</span>
+                <span className="text-[#76a9fa] text-2xl font-bold flex flex-row flex-nowrap items-center">Generative</span>
               
                 <Icon
                   icon="mingcute:down-fill"
@@ -58,7 +57,7 @@ export default function HomePage() {
         </div>
         
         <div>
-          <div className="cards gap-3 py-10 px-5 grid sm:grid-cols-3 lg-grid-cols-5 lg:px-20">
+          <div className="cards gap-3 py-10 px-5 grid sm:grid-cols-3 lg:grid-cols-5 lg:px-20">
             {collectionCardsArrayGenerator()}
           </div>
         </div>

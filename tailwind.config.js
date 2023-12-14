@@ -61,6 +61,9 @@ export default {
       
       width: {
         '90': '90vw'
+      },
+      screens: {
+        'small': '10px'
       }
     },
   },

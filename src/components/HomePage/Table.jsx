@@ -34,7 +34,7 @@ export const TableContainer = () => {
                 FLOOR: <div className="ml-2 font-bold ">{nft.Floors[0]}</div>
                 <div className="text-[#31c48d] flex flex-row flex-nowrap justify-self-center items-center ">
                   <Icon
-                    className="small-hidden"
+                    className="max-[640px]:hidden"
                     icon="ph:arrow-up-left-light"
                     color="#31c48d"
                     width="16"
@@ -62,7 +62,7 @@ export const TableContainer = () => {
             </div>
           </div>
         </td>
-        <td className="small-hidden">
+        <td className="max-[640px]:hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
             <div className="font-bold ">{nft.Floors[0]}</div>
             <div className="text-[#31c48d] flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
@@ -77,7 +77,7 @@ export const TableContainer = () => {
             </div>
           </div>
         </td>
-        <td className="small-hidden">
+        <td className="max-[640px]:hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
             <div className="font-bold ">{nft.Owners[0]}</div>
             <div className="text-[#f05252] flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
@@ -119,7 +119,7 @@ export const TableContainer = () => {
                 FLOOR: <div className="ml-2 font-bold ">{nft.Floors[0]}</div>
                 <div className="text-[#31c48d] flex flex-row flex-nowrap justify-self-center items-center ">
                   <Icon
-                    className="small-hidden"
+                    className="max-[640px]:hidden"
                     icon="ph:arrow-up-left-light"
                     color="#31c48d"
                     width="16"
@@ -147,7 +147,7 @@ export const TableContainer = () => {
             </div>
           </div>
         </td>
-        <td className="small-hidden">
+        <td className="max-[640px]:hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
             <div className="font-bold ">{nft.Floors[0]}</div>
             <div className="text-[#31c48d] flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
@@ -162,7 +162,7 @@ export const TableContainer = () => {
             </div>
           </div>
         </td>
-        <td className="small-hidden">
+        <td className="max-[640px]:hidden">
           <div className="flex flex-col flex-nowrap px-4 py-2">
             <div className="font-bold ">{nft.Owners[0]}</div>
             <div className="text-[#f05252] flex flex-row flex-nowrap justify-self-center mx-auto text-xs">
@@ -188,8 +188,8 @@ export const TableContainer = () => {
             <th></th>
             <th className="text-left p-2">COLLECTION</th>
             <th>VOLUME</th>
-            <th className="small-hidden p-2">FLOOR</th>
-            <th className="small-hidden p-2">OWNERS</th>
+            <th className="max-[640px]:hidden p-2">FLOOR</th>
+            <th className="max-[640px]:hidden p-2">OWNERS</th>
           </tr>
         </thead>
         <tbody className="xl:hidden ">
@@ -197,11 +197,11 @@ export const TableContainer = () => {
 
           {secondTableRows}
         </tbody>
-        <tbody className="sm:hidden lg:hidden md:hidden small-hidden xl:table-row-group">
+        <tbody className="sm:hidden lg:hidden md:hidden max-[640px]:hidden xl:table-row-group">
           {firstTableRows}
         </tbody>
       </table>
-      <table className="sm:hidden lg:hidden md:hidden small-hidden xl:table w-1/2 text-center">
+      <table className="sm:hidden lg:hidden md:hidden max-[640px]:hidden xl:table w-1/2 text-center">
         <thead className="gray-color border-b divide-slate-700">
           <tr>
             <th></th>
